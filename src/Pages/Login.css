@@ -1,0 +1,66 @@
+.login .alert {
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+
+.BackgroundLeft-login{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.BackgroundRight-login{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.darkModeSwitch{
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    color: #1DA1F2;
+}
+
+.darkModeSwitch > input {
+    width: 3em !important;
+    height: 1.5rem !important;
+    margin-left: -3.5em !important;
+}
+
+.darkModeSwitch > label {
+    margin-left: 0.5rem;
+}
+
+@media only screen and (max-width:767px) {
+    .BackgroundRight-login{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .BackgroundRight-login{
+        background: rgba(68, 97, 242, 0.17);
+        border-radius: 35px 0px 0px 35px;
+    }
+    .BackgroundRight-login{
+        justify-content: center;
+    }
+
+    .darkmode_true{
+        background-color: #000;
+        border: none;
+        border-radius: 0px;
+    }
+}

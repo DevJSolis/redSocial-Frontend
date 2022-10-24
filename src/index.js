@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import NoPage from './components/NoPage/NoPage';
 import Home from './components/Home/Home';
+import Login from './Pages/Login';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/login" element={<Login />}/>
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
