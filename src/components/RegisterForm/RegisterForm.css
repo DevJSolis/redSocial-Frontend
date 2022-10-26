@@ -1,0 +1,51 @@
+#RegisterForm {
+    text-align: center;
+    position: relative;
+    bottom: 6rem;
+}
+#RegisterForm .formControl{
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 0px 11px 15px;
+    border: none;
+}
+
+#RegisterForm .inputsGroup{
+    margin: 0 auto;
+}
+
+#RegisterForm .text-muted{
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF !important;
+    font-size: 14px;
+}
+
+#RegisterForm  .form-btn{
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color: #4461F2;
+}
+
+@media only screen and (min-width:768px) {
+    #RegisterForm {
+        bottom: 0rem;
+    }
+
+    #RegisterForm .ctaRow{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    #RegisterForm .ctaRow .text-muted{
+        color: #1DA1F2 !important;
+    }
+
+    #RegisterForm .loginTitle.darkmode_true{
+        color: #fff !important;
+    }
+}
+
