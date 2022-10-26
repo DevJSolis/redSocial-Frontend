@@ -7,6 +7,7 @@ import './index.css';
 import App from './App';
 import NoPage from './components/NoPage/NoPage';
 import Home from './components/Home/Home';
+import Post from './components/Post/Post';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,7 +15,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}/>
+        <Route path="/" element={<Post />}/>
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
