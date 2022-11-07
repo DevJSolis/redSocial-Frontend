@@ -1,0 +1,52 @@
+#rectangle {
+
+  width: 100%;
+  position: absolute;
+  background: #4461F2;
+  border-bottom-right-radius: 90px;
+  border-bottom-left-radius: 90px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color 2s ease-out 100ms
+}
+
+#rectangle:hover {
+  background-color: #8b99ec;
+}
+
+/* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+#profileImg {
+  position: absolute;
+  width: 12em;
+  height: 12em;
+  margin-left: 37em;
+  margin-top: 7.5em;
+}
+
+#profileName {
+  position: absolute;
+  margin-left: 35em;
+  margin-top: 20em;
+
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+
+/*
+RECTANGLE
+position: absolute;
+width: 2081px;
+height: 690px;
+left: -65px;
+top: -133px;
+
+background: #4461F2;
+border-radius: 157px; */
