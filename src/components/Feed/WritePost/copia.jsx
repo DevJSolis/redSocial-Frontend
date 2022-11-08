@@ -1,22 +1,22 @@
-import React, {Fragment} from 'react';
-import logo from './logo.svg';
-import './Post.css';
+import React, { Fragment } from 'react';
+//  import logo from './logo.svg';
+import './WritePost.css';
 import foto from './images/Mg.png';
 
 
-function Post() {
+function Copia() {
   return (
     <Fragment>
       <div className='divmaestro'>
 
         <div className='fperfil'>
-          <img src={foto} className='foto'/>
+          <img src={foto} className='foto' alt='Foto de perejil' />
         </div>
         <div className='post'>
           <div className='divtexto'>
             <input type="text" placeholder="What's happening" className='texto'></input>
-            <br/>
-            <br/>
+            <br />
+            <br />
           </div>
           <div className='extrasdiv'>
             <button className='extras'><i class="fa fa-picture-o fa-lg" ></i></button>
@@ -29,8 +29,8 @@ function Post() {
         </div>
       </div>
     </Fragment>
-    
+
   );
 }
 
-export default Post;
+export default Copia;
