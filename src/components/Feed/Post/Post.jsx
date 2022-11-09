@@ -9,11 +9,13 @@ import ProfileImagen from "./images/memoji_girls_9_13.png";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const comments = ["Hola", "como estas?", "skfjdsf", "mas"];
 
-function Post() {
+// const comments = ["Hola", "como estas?", "skfjdsf", "mas"];
+
+function Post({post}) {
+  console.log(post)
+  const {time, caption, likes, comments} = post;//post;
   return (
     <>
       <link
@@ -26,12 +28,12 @@ function Post() {
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous"
       ></link>
-      <Card>
+      <Card className="container lol">
         <div class="card flex-row">
           <img class="imagenPerfil" src={ProfileImagen} alt="Post" />
           <div class="card-body">
             <h4 class="card-title h5 h4-sm">Jenny Wilson created a new post</h4>
-            <p class="card-text">44 min ago</p>
+            <p class="card-text">{time}</p>
           </div>
         </div>
 
@@ -41,8 +43,7 @@ function Post() {
               <Card>
                 <Card.Body>
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    {caption}
                   </Card.Text>
                 </Card.Body>
                 <img class="resize" src={PostImagen} alt="Post" />
@@ -54,8 +55,8 @@ function Post() {
           </Row>
           <Row>
             <Col>
-              <Col>12 likes</Col>
-              <Col>20 comments</Col>
+              <Col>{likes} likes</Col>
+              <Col>{comments.length} comments</Col>
             </Col>
             <Col>
               <InputGroup class="newComment" className="mb-3">

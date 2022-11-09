@@ -7,7 +7,7 @@ import './index.css';
 import App from './App';
 import NoPage from './components/NoPage/NoPage';
 import Home from './components/Home/Home';
-import Post from './components/Post/Post';
+import Post from './components/Feed/ListOfPosts';
 import Perfil from './components/Perfil/Perfil';
 
 
