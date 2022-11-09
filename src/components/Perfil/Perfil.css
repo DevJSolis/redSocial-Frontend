@@ -1,0 +1,87 @@
+body{
+    background-color:#E5E5E5 ; 
+ }
+
+ .containerP{
+    overflow-y: scroll;
+ }
+
+.header {
+    position: absolute;
+    width: 1670px;
+    height: 590px;
+    left: -65px;
+    top: -133px;
+    background: #4461F2;
+    border-radius: 157px;
+}
+
+.saly {
+    position: absolute;
+
+    width: 1000px;
+    left: 18.07%;
+    right: 27.39%;
+    top: 6.07%;
+    bottom: 1.53%;
+
+    background-image: url(images/Saly-10.png);
+    border-radius: 98px;
+    transform: rotate(-0.2deg);
+}
+.namePerson {
+    position: absolute;
+    width: 489px;
+    height: 44px;
+    left: 900px;
+    top: 500px;
+
+    font-family: 'Baloo Bhaijaan';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 17px;
+}
+.fotoP {
+    position: absolute;
+    width: 215px;
+    height: 188px;
+    left: 1280px;
+    top: 375px;
+
+    background: url(./images/fotoP.png);
+    border-radius: 54px;
+}
+.amigos{
+    position: absolute;
+    width: 706px;
+    height: 175px;
+    left: 19px;
+    top: 549px;
+
+    background: #FFFFFF;
+    border-radius: 26px;
+}
+
+.fotos{
+    position: absolute;
+    width: 706px;
+    height: 276px;
+    left: 19px;
+    top: 737px;
+
+    background: #FFFFFF;
+    border-radius: 26px;
+}
+
+.postP{
+    position: absolute;
+    width: 730px;
+    height: 656px;
+    left: 769px;
+    top: 590px;
+
+    background: #FFFFFF;
+    border-radius: 54px;
+
+}
