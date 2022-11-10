@@ -49,8 +49,8 @@ function Post({post}) {
           </Row>
           <Row>
             <Col>
-              <Col><i className="fa fa-heart-o" aria-hidden="true"></i> {likes} likes</Col>
-              <Col><i className="fa fa-comment-o" aria-hidden="true"></i> {comments.length} comments</Col>
+              <Col><div className="btn"><i className="fa fa-heart-o" aria-hidden="true"></i> {likes} likes</div></Col>
+              <Col><div className="btn"><i className="fa fa-comment-o" aria-hidden="true"></i> {comments.length} comments </div></Col>
             </Col>
             <Col>
               <InputGroup  className="mb-3">

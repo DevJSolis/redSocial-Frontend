@@ -73,7 +73,7 @@
 }
 .send-comment{
 display: flex;
-
+column-gap: 0.5rem;
 }
 .newComment{
 	width: 100%;
