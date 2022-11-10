@@ -25,7 +25,7 @@ function WritePost() {
             </div>
 
             <div className='sendbutton'>
-              <button type="button" class="btn btn-primary ">Send</button>
+              <button type="button" className="btn btn-primary ">Send</button>
             </div>
           </div>
         </div>

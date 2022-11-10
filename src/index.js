@@ -6,7 +6,8 @@ import './index.css';
 
 import NoPage from './components/NoPage/NoPage';
 import Home from './components/Home/Home';
-import Feed from './components/Feed/Feed/Feed'
+import Feed from './components/Feed/Feed';
+import Perfil from './components/Perfil/Perfil';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,8 +15,8 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/Feed" element={<Feed />}/>
+        <Route path="/perfil" element={<Perfil />}/>  
+        <Route path="/" element={<Feed />}/>
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>

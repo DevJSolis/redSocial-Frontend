@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import WritePost from '../WritePost/WritePost'
-import Post  from '../Post/Post'
+import WritePost from './WritePost/WritePost'
+import Posts  from './ListOfPosts'
 const Feed = props => {
   return (
     <>
     <div className='container'>
       <WritePost/>
-      <Post/>
+      <Posts/>
     </div>
     </>
   )
