@@ -6,6 +6,7 @@ import './index.css';
 
 import NoPage from './components/NoPage/NoPage';
 import Home from './components/Home/Home';
+import Login from './Pages/Login';
 import Feed from './components/Feed/Feed';
 import Perfil from './components/Perfil/Perfil';
 
@@ -17,6 +18,7 @@ root.render(
       <Routes>
         <Route path="/perfil" element={<Perfil />}/>  
         <Route path="/" element={<Feed />}/>
+        <Route path="/login" element={<Login />}/>
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
