@@ -1,0 +1,51 @@
+#loginForm {
+    text-align: center;
+    position: relative;
+    bottom: 6rem;
+}
+#loginForm .formControl{
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 0px 11px 15px;
+    border: none;
+}
+
+#loginForm .inputsGroup{
+    margin: 0 auto;
+}
+
+#loginForm .text-muted{
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF !important;
+    font-size: 14px;
+}
+
+#loginForm  .form-btn{
+    width: 100%;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color: #4461F2;
+}
+
+@media only screen and (min-width:768px) {
+    #loginForm {
+        bottom: 0rem;
+    }
+
+    #loginForm .ctaRow{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    #loginForm .ctaRow .text-muted{
+        color: #1DA1F2 !important;
+    }
+
+    #loginForm .loginTitle.darkmode_true{
+        color: #fff !important;
+    }
+}
+

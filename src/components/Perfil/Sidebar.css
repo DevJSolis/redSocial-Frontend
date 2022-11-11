@@ -1,0 +1,103 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #E4E9F7;
+  }
+  
+  .Sidebar {
+    border-top-right-radius: 55px;
+    border-bottom-right-radius: 55px;
+    position: absolute;
+    top: -28px;
+    left: -25px;
+    height: 400px; 
+    width: 130px;
+    padding: 48px 0px 0px 48px;
+    background-color: #FFF;
+    z-index: 100;  
+  }
+
+  .Sidebar.dark {
+    border-top-right-radius: 55px;
+    border-bottom-right-radius: 55px;
+    position: absolute;
+    top: -28px;
+    left: -25px;
+    height: 400px; 
+    width: 130px;
+    padding: 48px 0px 0px 48px;
+    background-color: #2e2e30;
+    z-index: 100;  
+  }
+  
+  .SidebarList {
+    height: auto;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+  
+  .SidebarList .row {
+    width: 100%;
+    height: 60px;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    color: blue;
+    justify-content: center;
+    align-items: right;
+  }
+
+  .SidebarList.dark .row {
+    width: 100%;
+    height: 60px;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: right;
+  }
+  
+  .SidebarList .row:hover {
+    cursor: pointer;
+    transition: 0.08s ;
+    background-color: #004BE1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+  }
+  .SidebarList #active {
+    background-color: #004BE1;
+  
+  }
+  .row #icon {
+    position: relative;
+    top: 55px;
+    min-width: 60px;
+    padding: 10px 20px 0px 0px;
+    border-radius: 6px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    transition: all 0.2s ease;
+    color:aqua;
+  }
+
+  .icon {
+    position: relative;
+    top: 15px;
+    right: 11px;
+    fill: black;
+    width: 28px;
+    height: 27px;
+    padding: 0px 0px 0px 0px;
+  }

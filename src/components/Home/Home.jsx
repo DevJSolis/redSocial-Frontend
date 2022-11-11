@@ -7,7 +7,7 @@ function Home() {
     return(
         <>
             <Alert className='text-center' variant="info"> 
-                This is a React Bootstrap Test
+                Holis
             </Alert>
         </>
     )
