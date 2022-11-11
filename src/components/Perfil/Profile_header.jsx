@@ -1,26 +1,27 @@
 import { useState } from 'react'
 
-import bgSally from './assets/header/sally_bg.png'
-import userImg from './assets/header/profile.png'
+import bgSally from './images/Saly-10.png'
+import userImg from './images/fotoP.png'
+import { Container } from 'react-bootstrap'
 
-import './Profile.css'
+import './Profile_header.css'
 
 function App() {
 
   return (
-    <div className="App">
-      <header>
-        <div id='rectangle'>
-          <img src={bgSally} alt="background image"/>
-        </div>
-        <div id='profileImg'>
+
+    <Container fluid>
+      <div className='rectangle'>
+        <img className= 'imgH'src={bgSally} alt="header image"/>
+      </div>
+      <div className='profileImg'>
           <img src={userImg} id='profileImg' alt="React logo" />
-        </div>
-        <div id='profileName'>
-          <h1>Sally Méndez</h1>
-        </div>
-      </header>
-    </div>
+      </div>
+      <div id='profileName'>
+        <h1>Sally Méndez</h1>
+      </div> 
+    </Container>
+
   )
 }
 

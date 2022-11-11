@@ -1,23 +1,14 @@
 import React from 'react'
+import ProfileHeader from './Profile_header'
 import "./Perfil.css";
+import FriendsCont from './FriendsCont';
 const Perfil = () => {
   return (
-    <div className='containerP'>
-        <div className='header'>
-             <div className=''></div>
-        </div>
-        <div className='namePerson'>
-            Nombre
-        </div>
-        <div className='fotoP'></div>
-        <div className='amigos'></div>
-        <div className='fotos'></div>
-        <div className='postP'></div>
-
-    </div>
-
-
-
+    <>
+      <ProfileHeader/>
+      <FriendsCont/>
+      
+    </>
   )
 }
 

@@ -1,4 +1,4 @@
-#circle {
+.circle {
   width: 60px;
   justify-content: center;
   height: 60px;
@@ -9,7 +9,7 @@
   /*border: 20px, solid green*/
 }
 
-#avatar {
+.avatar {
   margin-top: 5px;
   margin-left: 5px;
   width: 50px;
@@ -17,10 +17,8 @@
 
   /*border: 10px, solid white*/
 }
-#userName {
+.userName {
   margin-top: 5px;
-  font-family: "Rubik";
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 135%;

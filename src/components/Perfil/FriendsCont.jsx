@@ -3,6 +3,7 @@ import { CircularAvatar } from "./CircularAvatar";
 import "./FriendsCont.css";
 import Stack from "react-bootstrap/Stack";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Col, Container, Row } from "react-bootstrap";
 
 function FriendsCont({ dataFriends, dark }) {
   const [data, setData] = useState(0);
@@ -18,12 +19,13 @@ function FriendsCont({ dataFriends, dark }) {
 
   return (
     <>
-      <div id="container">
+      
+      <div className="container">
 
         <Stack gap={0}>
           <Stack direction="horizontal">
-            <p id="friends">AMIGOS</p>
-            <input id="search" />
+            <p className="friends">Amigos</p>
+            <input className="search" />
         </Stack>
           <Stack direction="horizontal" gap={2}>
             <CircularAvatar

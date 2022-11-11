@@ -1,23 +1,21 @@
 /* Rectangle 41917 */
 
-#container {
+.container {
   background: white;
   border-radius: 26px;
   height: 175px;
   left: 19px;
   position: absolute;
-  top: 649px;
-  width: 706px;
+  top: 590px;
+  width: 550px;
   padding: 15px;
 }
-#friends {
+.friends {
   width: 152px;
   height: 19px;
   left: 67px;
   top: 678px;
   margin-top: 20px;
-  font-family: "Rubik";
-  font-style: normal;
   font-weight: 500;
   font-size: 28px;
   line-height: 54%;
@@ -25,7 +23,7 @@
   color: #000000;
 }
 
-#search {
+.search {
   /* Rectangle 41931 */
 
   box-sizing: border-box;
