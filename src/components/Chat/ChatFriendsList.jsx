@@ -36,6 +36,16 @@ const ChatFriendsList = () => {
         send: true,
         messages: 2,
       },
+      {
+        username: 'bushini',
+        name: 'Jorge Garcia',
+        profilePhoto: require('../../assets/FriendsChatList/pp.jpg'),
+        lastMessage: 'Hola, el viernes estás libre para jugar?',
+        lastMessageTime: '7:30 am',
+        read: false,
+        send: true,
+        messages: 0,
+      },
       
     ]
   return (
