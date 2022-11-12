@@ -3,7 +3,7 @@ import "./NoPage.css";
 
 const NoPage = () => {
     return (
-        <div class="noPageWrapper">
+        <div className="noPageWrapper">
             404
         </div>
     )

@@ -1,0 +1,82 @@
+
+
+.card{
+	width: 70%;
+	box-sizing: border-box;
+	border: 10px solid white;
+	border-top-left-radius:54px;
+	border-top-right-radius:54px;
+	border-bottom-left-radius:54px;
+	border-bottom-right-radius:54px;
+}
+
+.imagenPerfil { 
+	width:10%;
+	background-color: rgb(228, 208, 238);
+	border-top-left-radius:75%;
+	border-top-right-radius:75%;
+	border-bottom-left-radius:75%;
+	border-bottom-right-radius:75%;
+}
+
+.resize { 
+	margin: 5%;
+	width: 50%;
+	height: 50%; 
+	background-color:rgb(255, 255, 255);
+}
+
+.comment { 
+	margin: 3%;
+	width: 10%;
+	height: 10%; 
+	background-color:rgb(255, 255, 255);
+	border-top-left-radius:100%;
+	border-top-right-radius:100%;
+	border-bottom-left-radius:100%;
+	border-bottom-right-radius:100%;
+}
+
+.container{
+	margin: 2rem auto;
+	width: 100%;
+}
+
+.container-fotoperfil {
+
+	background-color: #8709F1;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	justify-self: end;
+	padding: 0.25rem;
+}
+
+@media(min-width: 478px) {
+	.container-fotoperfil {
+		padding: 0rem;
+		width: 5rem;
+		height: 5rem;
+	}
+}
+
+.comment-content{
+	background-color: lightblue;
+	border-top-left-radius:25px;
+	border-top-right-radius:25px;
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+	width: 100%;
+}
+.send-comment{
+display: flex;
+column-gap: 0.5rem;
+}
+.newComment{
+	width: 100%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+}
