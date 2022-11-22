@@ -26,7 +26,7 @@ function NewPassword(){
                     />
            <Row className='newPasswordFormWrapper'>
             <Col xs={12} md={5}>
-            <NewPasswordForm/>  
+              <NewPasswordForm darkMode={darkModeSwitchState}/> 
             </Col>
            </Row>
         </Container>
