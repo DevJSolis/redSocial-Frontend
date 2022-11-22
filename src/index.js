@@ -1,29 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css';
+import { PersistGate } from "redux-persist/integration/react";
+import store from "./store/ReduxStore";
+import App from "./App";
 
-import NoPage from './components/NoPage/NoPage';
-import Home from './components/Home/Home';
-import Login from './Pages/Login';
-import Register from './Pages/Register/Register';
-import Feed from './components/Feed/Feed';
-import Perfil from './components/Perfil/Perfil';
+// stack overflow
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/perfil" element={<Perfil />}/>  
-        <Route path="/" element={<Feed />}/>
-        <Route path="/login" element={<Login />}/>
-        <Route path="/register" element={<Register />}/>
-        <Route path="*" element={<NoPage />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+ReactDOM.render(
+  <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="*" element={<App />} />
+        </Routes>
+      </BrowserRouter>
+  </Provider>,
+  document.getElementById("root")
 );
 
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
