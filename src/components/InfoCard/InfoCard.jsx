@@ -16,7 +16,7 @@ const InfoCard = () => {
   const { user } = useSelector((state) => state.authReducer.authData);
 
 
-  const handleLogOut = ()=> {
+  const handleLogOut = () => {
     dispatch(logout())
   }
 
@@ -49,7 +49,7 @@ const InfoCard = () => {
             <ProfileModal
               modalOpened={modalOpened}
               setModalOpened={setModalOpened}
-              data = {user}
+              data={user}
             />
           </div>
         ) : (
@@ -59,22 +59,30 @@ const InfoCard = () => {
 
       <div className="info">
         {/* */}
-        <span>
-          <b>Estado </b>
-        </span>
-        <span>{profileUser.relationship}</span>
+        <div className="followStatus">
+          <span className="profileCardText">
+            <b>Estado </b>
+          </span>
+          <span>{profileUser.relationship}</span>
+        </div>
+        <hr />
       </div>
       <div className="info">
-        <span>
-          <b> De </b>
-        </span>
-        <span>{profileUser.livesIn}</span>
+        <div className="followStatus">
+          <span className="profileCardText">
+            <b> Ubicación </b>
+          </span>
+          <span>{profileUser.livesIn}</span>
+        </div>
+        <hr />
       </div>
       <div className="info">
-        <span>
-          <b>Profesión </b>
-        </span>
-        <span>{profileUser.worksAt}</span>
+        <div className="followStatus">
+          <span className="profileCardText">
+            <b>Profesión </b>
+          </span>
+          <span>{profileUser.worksAt}</span>
+        </div>
       </div>
 
       <button className="button logout-button" onClick={handleLogOut}>Cerrar Sesión</button>
