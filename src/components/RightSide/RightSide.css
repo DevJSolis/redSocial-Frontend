@@ -4,11 +4,17 @@
     gap: 2rem;
 }
 
+.navIconsCard{
+    background-color: white;
+    border-radius: 15px;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
 
 .navIcons{
     margin-top: 1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .navIcons>a>img{
