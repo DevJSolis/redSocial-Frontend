@@ -1,10 +1,10 @@
 import "./App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Auth from "./pages/Auth/Auth";
-import Profile from "./pages/Profile/Profile";
+import Home from "./Pages/Home/Home";
+import Auth from "./Pages/Auth/Auth";
+import Profile from "./Pages/Profile/Profile";
 import { useSelector } from "react-redux";
-import Chat from "./pages/Chat/Chat";
+import Chat from "./Pages/Chat/Chat";
 
 function App() {
   const user = useSelector((state) => state.authReducer.authData);
