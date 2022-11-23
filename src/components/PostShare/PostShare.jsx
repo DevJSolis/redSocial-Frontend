@@ -94,10 +94,6 @@ const PostShare = () => {
             <UilPlayCircle />
             Video
           </div>
-          <div className="option" style={{ color: "black" }}>
-            <UilLocationPoint />
-            Location
-          </div>
           <button
             className="button ps-button"
             onClick={handleUpload}
