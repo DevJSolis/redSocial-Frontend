@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: column;
     font-size: 13px;
-    max-height: 10rem;
+    max-height: 100%;
+    background-color: white;
 }
 .follower{
     display: flex;
@@ -24,6 +25,7 @@
     width: 3.2rem;
     height: 3.2rem;
     border-radius: 50%;
+    margin-left: 0.5rem;
 }
 
 .name{
@@ -43,6 +45,7 @@
     height: 2rem;
     padding-left: 20px;
     padding-right: 20px;
+    margin-right: 0.5rem;
 }
 
 .UnfollowButton{
@@ -50,6 +53,7 @@
     border: 2px solid #4461F2;
     cursor: pointer;
     background: transparent;
+    margin-right: 0.5rem;
 }
 
 
@@ -58,4 +62,5 @@
     color: #0028f0;
     align-self: center;
     cursor: pointer;
+    margin-bottom: 0.5rem;
 }
