@@ -1,67 +1,165 @@
 .Auth {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  gap: 55rem;
-  position: relative;
-  background-image: url("../../../src/assets/login/backgroundLoginDesktop.png");
-  background-repeat: "no-repeat";
-  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  background-color: rgba(143,189,232,0.33);
 }
 
-.Auth > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+
 
 /* left side */
-.a-left{
-    gap: 2rem;
+.Auth .BackgroundLeft-login{
+  display: none;
 }
-
-.a-left > img {
-  width: 4rem;
-  height: 4rem;
-}
-
-.Webname > h1 {
-    font-size: 3rem;
-    background-color: red;
-  
-    /* Create the gradient. */
-    background-image: var(--buttonBg);
-    
-    /* Set the background size and repeat properties. */
-    background-size: 100%;
-    background-repeat: repeat;
-  
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-}
-
-.Webname>h6{
-    font-size: 0.85rem;
-}
-
 
 
 /* right side */
 
-
-.authForm{
-    background-color: white;
-    border-radius: 1rem;
-    padding: 1rem;
+.Auth .bgRegisterMogile{
+  width: 100%;
+  height: 35vh;
+  display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #8FBDE8;
+    box-shadow: 0px 7px 18px 0px rgba(143,189,232,0.33);
+    -webkit-box-shadow: 0px 7px 18px 0px rgba(143,189,232,0.33);
+    -moz-box-shadow: 0px 7px 18px 0px rgba(143,189,232,0.33);
 }
 
-.authForm>div{
-    width: 100%;
-    align-items: center;
+.BackgroundRight-login{
+  width: calc(100%);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.BackgroundRight-login.register{
+  height: 100vh !important;
+  justify-content: center;
+}
+
+.Auth .infoForm>div{
+  display: initial;
+  gap: 0rem;
+  height: auto;
+  width: initial;
+}
+.autTitleh1,
+.Auth .authTitle{
+display: none;
+}
+.Auth .infoForm.authForm{
+  width: 80%;
+    margin: 0 auto;
+}
+
+.Auth .authInput{
+  display: flex !important;
+  flex-direction: column;
+  row-gap: 2rem !important;
+  width: 100% !important;
+}
+
+.Auth .gap2{
+  gap: 2rem;
+}
+
+.Auth .infoInput{
+  width: 100% !important;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 0px 11px 15px;
+  border: none;
+  background-color: #fff;
+}
+
+.Auth  .text-muted{
+  display: flex;
+  justify-content: flex-end;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.Auth  .text-muted:hover{
+  opacity: 0.8;
+}
+
+.Auth .cta-Wrapper{
+  display: flex !important;
+  flex-direction: column;
+  width: 100% !important;
+  row-gap: 1rem !important;
+}
+
+.Auth .infoButton{
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px 0px;
+  background-color: #4461F2 !important;
+  background: initial;
+  height: auto;
+}
+.Auth .infoButton:hover{
+  border:none;
+  background-color: #4461F2;
+  color: #fff;
+  background:initial
+}
+
+@media only screen and (min-width:768px) {
+  .Auth{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    gap: 0; 
+  }
+  .Auth .bgRegisterMogile{
+    display: none !important;
+  }
+  .Auth .BackgroundLeft-login{
+    display: flex;
+    width: 66.67%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .BackgroundRight-login{
+    width: calc(100% - 66.67%);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(68, 97, 242, 0.17);
+    border-radius: 35px 0px 0px 35px;
+  }
+
+  .Auth .text-muted{
+      color: #1DA1F2 !important;
+  }
+  .autTitleh1,
+  .Auth .authTitle{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+ 
 }

@@ -30,9 +30,10 @@
 }
 
 .Right-side-chat {
-  display: flex;
+  display: grid;
   flex-direction: column;
   gap: 1rem;
+  grid-template-columns: auto 3rem;
 }
 .conversation:hover {
   background: #80808038;

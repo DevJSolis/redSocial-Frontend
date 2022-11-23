@@ -93,15 +93,13 @@ const Chat = () => {
       {/* Right Side */}
 
       <div className="Right-side-chat">
-        <div style={{ width: "20rem", alignSelf: "flex-end" }}>
-          <NavIcons />
-        </div>
         <ChatBox
           chat={currentChat}
           currentUser={user._id}
           setSendMessage={setSendMessage}
           receivedMessage={receivedMessage}
         />
+        <NavIcons />
       </div>
     </div>
   );

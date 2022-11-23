@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Auth.css";
 import Logo from "../../assets/img/logo2.png";
 import { logIn, signUp } from "../../actions/AuthActions.js";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import backgroundLoginDesktop from '../../assets/login/backgroundLoginDesktop.png';
+import backgroundLoginMobile from '../../assets/login/backgroundLoginMobile.png';
+import backgroundRegisterDesktop from '../../assets/register/backgroundRegisterDesktop.png';
 
 const Auth = () => {
 
@@ -48,31 +51,53 @@ const Auth = () => {
       dispatch(logIn(data, navigate));
     }
   };
+  // Media Query
+  const mediaMatch = window.matchMedia('(max-width: 767px)');
+  const [matches, setMatches] = useState(mediaMatch.matches);
+
+  useEffect(() => {
+    const handler = e => setMatches(e.matches);
+    mediaMatch.addListener(handler);
+    return () => mediaMatch.removeListener(handler);
+  });
+
+  
+  const styles = {
+    container: isRowBased => ({
+      backgroundImage: isRowBased ? !isSignUp ? `url(${backgroundLoginMobile})` : '' : ''
+      })
+    }
+
 
   return (
-    <div className="Auth">
+    <div className="Auth" style={{
+    }}>
       {/* left side */}
 
-      <div className="a-left">
-        <img src={Logo} alt="" />
-
-        <div className="Webname">
-          <h1>CHAT-APP</h1>
-          <h6>Ingeniería de Software 2022</h6>
-        </div>
+      <div className="BackgroundLeft-login" style={{backgroundImage: `url(${isSignUp ? backgroundRegisterDesktop : backgroundLoginDesktop})` }}>
       </div>
 
       {/* right form side */}
+      
+      <div className="bgRegisterMogile" style={{display: isSignUp ?  "flex": "none", 
+        backgroundImage: `url(${isSignUp ? backgroundRegisterDesktop : ''})`,
 
-      <div className="a-right">
+        }}>
+      </div>
+      <div className={`BackgroundRight-login ${!isSignUp ? 'register' : '' }`} style={styles.container(matches)}>
         <form className="infoForm authForm" onSubmit={handleSubmit}>
-          <h3>{isSignUp ? "Register" : "Login"}</h3>
+          <h1 className="autTitleh1">
+            {isSignUp ? "Descubre lo nuevo" : ""}
+          </h1>
+          <h3 className="authTitle">
+            {isSignUp ? "Únete hoy" : "Iniciar Sesión"}
+          </h3>
           {isSignUp && (
-            <div>
+            <div className="authInput">
               <input
                 required
                 type="text"
-                placeholder="First Name"
+                placeholder="Ingrese su Nombre"
                 className="infoInput"
                 name="firstname"
                 value={data.firstname}
@@ -81,7 +106,7 @@ const Auth = () => {
               <input
                 required
                 type="text"
-                placeholder="Last Name"
+                placeholder="Ingrese su Apellido"
                 className="infoInput"
                 name="lastname"
                 value={data.lastname}
@@ -90,18 +115,18 @@ const Auth = () => {
             </div>
           )}
 
-          <div>
+          <div className="authInput"> 
             <input
               required
               type="text"
-              placeholder="Username"
+              placeholder="Usuario"
               className="infoInput"
               name="username"
               value={data.username}
               onChange={handleChange}
             />
           </div>
-          <div>
+          <div className="authInput">
             <input
               required
               type="password"
@@ -112,7 +137,7 @@ const Auth = () => {
               onChange={handleChange}
             />
             {isSignUp && (
-              <input
+              <input 
                 required
                 type="password"
                 className="infoInput"
@@ -134,12 +159,19 @@ const Auth = () => {
           >
             *Confirm password is not same
           </span>
-          <div>
-            <span
+          <div className="cta-Wrapper">
+            <button
+              className="button infoButton"
+              type="Submit"
+              disabled={loading}
+            >
+              {loading ? "Loading..." : isSignUp ? "Registrate" : "Iniciar Sesión"}
+            </button>
+            <span className="text-muted"
               style={{
                 fontSize: "12px",
                 cursor: "pointer",
-                textDecoration: "underline",
+                color: isSignUp ? "black" : ""
               }}
               onClick={() => {
                 resetForm();
@@ -147,16 +179,9 @@ const Auth = () => {
               }}
             >
               {isSignUp
-                ? "Already have an account Login"
-                : "Don't have an account Sign up"}
+                ? "Iniciar Sesión"
+                : "Sign up"}
             </span>
-            <button
-              className="button infoButton"
-              type="Submit"
-              disabled={loading}
-            >
-              {loading ? "Loading..." : isSignUp ? "SignUp" : "Login"}
-            </button>
           </div>
         </form>
       </div>

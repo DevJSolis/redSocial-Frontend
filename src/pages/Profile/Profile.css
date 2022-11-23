@@ -1,10 +1,20 @@
 .Profile{
     position: relative;
     display: grid;
-    grid-template-columns: 18rem auto 20rem;
+    grid-template-columns: 18rem auto 3rem;
     gap: 1rem;
 }
 
+
+@media screen and (max-width:825px) {
+
+    .Profile{
+        position: relative;
+        display: inline-block;
+        grid-template-columns: 18rem auto 3rem;
+        gap: 1rem;
+    }
+}
 
 .Profile-center{
     display: flex;

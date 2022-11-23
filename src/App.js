@@ -5,6 +5,7 @@ import Auth from "./Pages/Auth/Auth";
 import Profile from "./Pages/Profile/Profile";
 import { useSelector } from "react-redux";
 import Chat from "./Pages/Chat/Chat";
+import bgFeed from "./assets/img/feed.png";
 
 function App() {
   const user = useSelector((state) => state.authReducer.authData);
@@ -16,10 +17,22 @@ function App() {
           window.location.href === "http://localhost:3000/chat"
             ? "calc(100vh - 2rem)"
             : "auto",
+        backgroundImage: 
+        window.location.href === "http://localhost:3000/auth"
+        ?  "none" : '',
+        padding: 
+        window.location.href === "http://localhost:3000/auth"
+        ?  "0rem" : ''
       }}
     >
-      <div className="blur" style={{ top: "-18%", right: "0" }}></div>
-      <div className="blur" style={{ top: "36%", left: "-8rem" }}></div>
+      <div className="blur" style={{ top: "-18%", right: "0",
+        display: 
+        window.location.href === "http://localhost:3000/auth"
+        ?  "none" : '', }}></div>
+      <div className="blur" style={{ top: "36%", left: "-8rem",
+        display: 
+        window.location.href === "http://localhost:3000/auth"
+        ?  "none" : '', }}></div>
       <Routes>
         <Route
           path="/"
