@@ -11,10 +11,39 @@
     padding-bottom: 1rem;
 }
 
+@media screen and (max-width: 825px) {
+
+    .navIconsCard{
+        background-color: white;
+        border-radius: 0px;
+        justify-content: center;
+        margin-top: 3rem;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        
+        
+    }
+ 
+}
+
 .navIcons{
     margin-top: 1rem;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 825px) {
+ 
+    .navIcons{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        display: inline-block;
+        justify-content: center;
+    }
 }
 
 .navIcons>a>img{
