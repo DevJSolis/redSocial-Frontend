@@ -79,7 +79,7 @@ const PostShare = () => {
         <div className="postOptions">
           <div
             className="option"
-            style={{ color: "var(--photo)" }}
+            style={{ color: "black" }}
             onClick={() => imageRef.current.click()}
           >
             <UilScenery />
@@ -88,13 +88,13 @@ const PostShare = () => {
 
           <div 
             className="option" 
-            style={{ color: "var(--video)" }}
+            style={{ color: "black" }}
             onClick={() => imageRef.current.click()}
           >
             <UilPlayCircle />
             Video
           </div>
-          <div className="option" style={{ color: "var(--location)" }}>
+          <div className="option" style={{ color: "black" }}>
             <UilLocationPoint />
             Location
           </div>
