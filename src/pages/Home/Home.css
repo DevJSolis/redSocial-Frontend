@@ -4,3 +4,14 @@
   grid-template-columns: 18rem auto 3rem;
   gap: 1rem;
 }
+
+@media screen and (max-width: 825px){
+ 
+  .Home {
+    position: relative;
+    display: block;
+    grid-template-columns: 18rem auto 3rem;
+    gap: 1rem;
+  }
+  
+}
